@@ -89,7 +89,7 @@ body{
 <div id="timer">
     <div class="days"> 
         <div style="font-size:15px;">직업훈련</div>
-        <div id="days" class="numbers " style="padding-x:100px;"> </div>
+        <div id="days" class="numbers "> </div>
       </div>
 </div>
 
@@ -116,6 +116,7 @@ let timer = setInterval(function() {
 
   // display
   document.getElementById("days").innerHTML=`D-${days}`
+  document.getElementById("days").style ="padding:100px;"
   document.getElementById("hours").innerHTML=hours
   document.getElementById("minutes").innerHTML=minutes
   document.getElementById("seconds").innerHTML=seconds
