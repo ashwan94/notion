@@ -22,7 +22,6 @@ body{
 
 .days, .hours, .minutes, .seconds {
   display: inline-block;
-  padding: 100px;
   width: 100px;
   border-radius: 5px;
 }
@@ -90,7 +89,7 @@ body{
 <div id="timer">
     <div class="days"> 
         <div sytle="font-size:15px;">직업훈련</div>
-        <div id="days" class="numbers " style="display:inline"> </div>
+        <div id="days" class="numbers "> </div>
       </div>
 </div>
 
@@ -116,7 +115,7 @@ let timer = setInterval(function() {
   let seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
   // display
-  document.getElementById("days").innerHTML=`D-${days}`
+  document.getElementById("days").innerHTML=`${days}`
   document.getElementById("hours").innerHTML=hours
   document.getElementById("minutes").innerHTML=minutes
   document.getElementById("seconds").innerHTML=seconds
